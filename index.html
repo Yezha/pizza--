@@ -77,13 +77,14 @@
   <div class="menu">
     <div class="menu__inner">
       <div class="menu__inner_items">
-        
+        <!-- обернули div, чтобы картинка и текст были на одной высоте -->
+        <div> 
           <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b5d4f1d5-94b3-4768-bc85-a7020aec1de6.jpg" alt="">
           <div class="menu__inner_description">
            <p>Пепперони Фреш с перцем</p>
            <p>Пепперони из говядины, сладкий перец, моцарелла, томатный соус</p>
          </div>
-        
+        </div>
         
           <div class="menu__inner_cart">
           <p>от 1 650 тг</p>
@@ -92,13 +93,13 @@
         
       </div>
       <div class="menu__inner_items">
-      
+        <div>
         <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b5d4f1d5-94b3-4768-bc85-a7020aec1de6.jpg" alt="">
         <div class="menu__inner_description">
           <p>Пепперони Фреш с томатами</p>
           <p>Пепперони из говядины, томаты, моцарелла, томатный соус</p>
         </div>
-       
+       </div>
 
           <div class="menu__inner_cart">
           <p>от 1 650 тг.</p>
@@ -107,13 +108,13 @@
         
       </div>
       <div class="menu__inner_items">
-       
+       <div>
         <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b5d4f1d5-94b3-4768-bc85-a7020aec1de6.jpg" alt="">
         <div class="menu__inner_description">
           <p>Испанские колбаски чоризо</p>
           <p>Томаты свежие, пикантная чоризо из говядины, моцарелла, соус чипотле</p>
         </div>
-       
+      </div>
         
           <div class="menu__inner_cart">
           <p>от 1 750 тг.</p>
@@ -122,13 +123,13 @@
         
       </div>
       <div class="menu__inner_items">
-       
+       <div>
         <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b5d4f1d5-94b3-4768-bc85-a7020aec1de6.jpg" alt="">
         <div class="menu__inner_description">
            <p>Сырная 🌱</p>
            <p>Моцарелла, томатный соус</p>
         </div>
-      
+      </div>
         
           <div class="menu__inner_cart">
           <p>от 1 650 тг.</p>
@@ -137,15 +138,17 @@
         
       </div>
     </div>
-    <!-- задали родителю menu_inner_drink flex-direction: column; чтобы выровнить в по вертикали -->
+    <!-- задали родителю menu_inner_drink flex-direction: column; чтобы выровнить по вертикали -->
     <div class="menu__inner_drink">
         <p class="drink_title">Напитки</p>
 
         <!-- потом задали к блоку drinks flex и выровнили через flex-wrap: wrap; - это нужно для того чтобы элементы переносились, если не помещаются в один ряд -->
         <div class="drinks">
-          <!-- затем к блоку drinks_item задаем тоже flex и flex-direction: column; что текст в блоке р выстроялась в колонку потом align-items: center; чтобы элементы держались в центре. затем justify-content: space-between; чтобы между текстом и блоком оставалось пространство вне зависимости от размера текста  -->
-            <div class="drinks_item">  
-              <p>Морс Черная Смородина, 0,45 л</p>
+          <!-- затем к блоку drinks_item задаем тоже flex и flex-direction: column; чтобы текст в блоке р выстроялась в колонку потом align-items: center; чтобы элементы держались в центре. затем justify-content: space-between; чтобы между текстом и блоком оставалось пространство вне зависимости от размера текста  -->
+            <div class="drinks_item">
+              <div class="drinks_title">
+                <p>Морс Черная Смородина, 0,45 л</p>
+              </div>  
               <!-- обернули последний блок в div, чтобы задать родителю flex. Итак; flex-direction: column;(колонка) align-items: center;(элемент по центру)  -->
               <div>
                 <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/af416bbc-ada5-49da-9235-7df43c99bccb.jpg" alt="">
@@ -154,8 +157,9 @@
             </div>
             </div>
             <div class="drinks_item">
-             
-              <p>Морс Вишня, 0,45 л</p>
+              <div class="drinks_title">
+               <p>Морс Вишня, 0,45 л</p>
+              </div>
               <div>
               <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/af416bbc-ada5-49da-9235-7df43c99bccb.jpg" alt="">
               
@@ -164,8 +168,9 @@
               </div>  
             </div>
             <div class="drinks_item">
-           
-              <p>Морс Клюква, 0,45 л</p>
+              <div class="drinks_title">
+               <p>Морс Клюква, 0,45 л</p>
+              </div>
               <div>
               <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/af416bbc-ada5-49da-9235-7df43c99bccb.jpg" alt=""> 
                <p>500 тг.</p>
@@ -173,8 +178,9 @@
               </div>  
             </div>
             <div class="drinks_item">
-              
-              <p>Морс Облепиха, 0,45 л</p>
+              <div class="drinks_title">
+               <p>Морс Облепиха, 0,45 л</p>
+              </div>
               <div>
               <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/af416bbc-ada5-49da-9235-7df43c99bccb.jpg" alt="">
                <p>500 тг.</p>
@@ -182,9 +188,9 @@
               </div>  
             </div>
             <div class="drinks_item">
-           
-              <p>Dr. Pepper, 0,355 л</p>
-              
+              <div class="drinks_title">
+                <p>Dr. Pepper, 0,355 л</p>
+              </div>
               <div>
                <img src="https://dodopizza-a.akamaihd.net/static/Img/Products/Drinks/ru-RU/af416bbc-ada5-49da-9235-7df43c99bccb.jpg" alt="">
                <p>500 тг.</p>
