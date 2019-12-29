@@ -186,7 +186,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-
+  margin-bottom: 50px;
 }
 .menu__inner {
   display: flex;
@@ -258,11 +258,119 @@ header {
 }
 .drinks_title {
   text-align: center;
-  width: 87%;
+  width: 88%;
 }
 .drinks_item div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+.drinks_item div p:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.drinks_item div button:nth-child(3) {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+  width: 70%;
+  font-weight: bold;
+  border: 1px solid #ff6900;
+  color: #ff6900;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.secret__buyer {
+  display: flex;
+  justify-content: center;  
+  background-color: #ff6900;
+  width: 100%;
+}
+.secret__buyer_inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 1040px;
+}
+.secret__buyer_inner div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.secret__buyer_inner div p {
+  padding-left: 10px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+}
+.secret__buyer_inner button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #ff6900;
+}
+.secret__buyer_inner button:hover {
+  background-color: #fff;
+  color: #ff6900;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #373535;
+  width: 100%;
+  padding-top: 30px;
+}
+.footer__content_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1040px;
+  padding-bottom: 30px;
+}
+.footer__content_info div {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content_info div p:nth-child(1) {
+  color: #fff;
+}
+.footer__content_info div p, a {
+  color: #bfbfbf;
+}
+
+.footer__content_cost {
+  width: 1040px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer__content_cost div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 30%;
+}
+.footer__content_cost div:nth-child(2) {
+  padding-left: 15px;
+}
+.footer__content_cost p {
+color: #bfbfbf;
+}
+.footer__content_cost p:nth-child(1) {
+  color: #fff;
+  font-size: 27px;
 }
